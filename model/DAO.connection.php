@@ -4,7 +4,7 @@ require_once("Discussion.php");
 
 class DAO{
 
-    private string $dsn = 'mysql:dbname=cloudStudio;host=localhost;port=80;charset=utf8';
+    private string $dsn = 'mysql:dbname=cloudstudio;host=cloudstudio.mysql.database.azure.com;port=3306;charset=utf8';
     private PDO $connection;
     private string $email;
     private string $mdp;
