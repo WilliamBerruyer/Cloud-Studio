@@ -1,0 +1,829 @@
+#mainNav > .register-photo {
+  border-style: none;
+  border-bottom: solid 1px #707070;
+}
+
+@media (min-width:1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    /*max-width: 1920px;*/
+  }
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.masthead.text-center.text-white.d-flex {
+  background-image: url('../../assets/img/studio.jpg');
+}
+
+.container.my-auto {
+  max-width: 1345px;
+  width: 1274px;
+  text-align: center;
+}
+
+@media (min-width:992px) {
+  .col-lg-8 {
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 83.3333%;
+    width: 949.984px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.mb-5, .my-5 {
+  margin-bottom: 3rem!important;
+  font-family: "Segoe UI";
+  color: rgb(255,255,255);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+
+@media (min-width:1200px) {
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width:992px) {
+  .col-lg-10 {
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+}
+
+b, strong {
+  font-weight: bold;
+  font-family: "Segoe Ui";
+  font-style: normal;
+}
+
+.text-uppercase {
+  /*text-transform: uppercase!important;*/
+  text-transform: lowercase;
+}
+
+#mainNav .navbar-brand {
+  text-transform: capitalize;
+  font-size: 77px;
+  font-family: "haettenschweiler";
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: black;
+  background: #fff8f7;
+  border-color: #f9f8f8;
+}
+
+.btn-primary {
+  color: black;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  color: black;
+  background: white;
+  border-color: white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  color: #fff;
+  background-color: white;
+}
+
+.btn-light.focus, .btn-light:focus, .btn-light:hover {
+  color: white;
+  background-color: #F53478;
+  border-color: #dae0e5;
+}
+
+#mainNav.navbar-shrink .navbar-brand, #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+  color: #707070;
+}
+
+header.masthead p {
+  font-weight: 450;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: rgba(0,0,0,.9);
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #707070;
+}
+
+@media (min-width:992px) {
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+}
+
+#mainNav .navbar-brand {
+  text-transform: initial;
+}
+
+.bg-primary {
+  background: #F8F8F8!important;
+}
+
+.text-white.section-heading {
+  color: black!important;
+  font-family: "Segoe Ui";
+  margin-bottom: 0.7em;
+  text-align: start;
+  font-weight: bold;
+  margin-top: 10%;
+  font-size: xx-large;
+}
+
+.text-faded.mb-4 {
+  color: black;
+  font-family: "Segoe UI";
+  text-align: left;
+  max-width: 70%;
+}
+
+.image-fls {
+  max-width: 100%;
+  height: auto;
+}
+
+#fls {
+  max-width: 100%;
+  height: auto;
+  max-height: 700px;
+  margin-top: 1em;
+  min-width: auto;
+}
+
+@media (min-width:768px) {
+  .col-md-8 {
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+.ari {
+  max-width: 100%;
+  height: auto;
+  max-height: 618px;
+  width: 508px;
+}
+
+.text-muted {
+  color: #868e96!important;
+  text-align: end;
+  font-family: "Segoe Ui";
+}
+
+.mb-3, .my-3 {
+  margin-bottom: 1rem!important;
+  text-align: end;
+  font-family: "Segoe Ui";
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+@media (min-width:768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    justify-content: center;
+    padding-left: 15px;
+  }
+}
+
+#fl-pic {
+  background-color: #F8F8F8;
+}
+
+#aircont-1 {
+  max-width: 60%;
+}
+
+#aircont-2 {
+  max-width: 60%;
+}
+
+.col-xl-6.order-2.text-center {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#Ariana-black {
+  background-color: #232323;
+}
+
+#grey-zone-title {
+  color: white;
+}
+
+#p-grey-zone {
+  color: rgb(222,222,222)!important;
+  font-family: "Segoe Ui";
+}
+
+#header-text {
+  text-shadow: 1px 1px 20px rgba(0,0,0,0.81);
+}
+
+#p-header {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.88);
+}
+
+a:hover {
+  color: #707070;
+  text-decoration: underline;
+}
+
+.nav-link.js-scroll-trigger:active {
+  color: black;
+}
+
+.nav-link.js-scroll-trigger:hover {
+  color: white;
+}
+
+a:active {
+  color: #707070!important;
+}
+
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover {
+  color: #707070;
+}
+
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:active {
+  color: #707070;
+}
+
+#CloudStudio {
+  text-transform: capitalize;
+  font-size: 77px;
+  font-family: "haettenschweiler";
+  letter-spacing: 1px;
+  font-style: normal;
+  color: black;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #707070;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: black;
+}
+
+#pagesSite:hover {
+  color: black!important;
+}
+
+#pagesSite:active {
+  color: white;
+}
+
+#pagesSite {
+  color: #707070!important;
+}
+
+@media (min-width:992px) {
+  #mainNav .navbar-brand {
+    color: white;
+  }
+}
+
+.blackbar {
+  background-color: black;
+  margin-top: 200px;
+}
+
+#whiteHeader {
+  background-color: white;
+  height: 5vh;
+  min-height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-top: 10rem;
+  background-position: 50%;
+  background-size: cover;
+  position: static;
+}
+
+.otherPages {
+  /*background-color: white;*/
+  /*height: 30vh;*/
+  min-height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  /*padding-top: 10rem;*/
+  background-position: 50%;
+  background-size: cover;
+  /*position: inherit;*/
+}
+
+.fixed-bottom, .fixed-top {
+  /*position: fixed;*/
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #707070;
+}
+
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link, #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+  color: #707070;
+}
+
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover {
+  color: black;
+}
+
+#mainNav .navbar-shrink > li.nav-item > a.nav-link {
+  color: #707070;
+}
+
+hr {
+  max-width: 100%;
+  border-width: 1px;
+  border-color: #707070;
+  margin: 0px;
+}
+
+#arianne::before {
+  content: "→ ";
+}
+
+#arianne1 {
+  background-color: #F8F8F8;
+}
+
+#arianneCont {
+  background-color: #F8F8F8;
+}
+
+.navigation-clean-search.navbar-light .navbar-nav .nav-link {
+  color: #707070;
+}
+
+.profilPic {
+  font-family: "Segoe Ui";
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.small, small {
+  font-family: "Segoe Ui";
+  color: rgb(112,112,112);
+}
+
+#projectCreation {
+  background-color: #F8F8F8;
+  padding: 5em 0em;
+  padding-top: 5px;
+}
+
+#profilRow {
+  max-width: 70%;
+}
+
+#ProfilSelecRow2 {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+#profilRow {
+  max-width: 75%;
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+.ProjectP {
+  font-family: "Segoe Ui";
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: 0;
+}
+
+#Plus {
+  background-color: #4346E1;
+  color: white;
+  margin-left: 1em;
+  height: 49px;
+  width: 49px;
+}
+
+#allProj {
+  max-width: 60%;
+  margin: auto;
+  font-family: "Segoe Ui";
+}
+
+#Open {
+  background-color: #4346E1;
+  color: white;
+  margin-left: 1em;
+}
+
+#openTD {
+  text-align: end;
+}
+
+tr {
+  background-color: white;
+  border-radius: 80%;
+}
+
+form {
+  max-width: 60%;
+  margin: auto;
+  font-family: "Segoe Ui";
+}
+
+.form-control {
+  margin-bottom: 1em;
+}
+
+#createB {
+  background-color: #4346E1;
+  color: white;
+}
+
+#btnLoginSignUp {
+  color: white;
+  background-color: #4346E1;
+  border-color: #dae0e5;
+  height: 42px;
+  margin-bottom: 14px;
+}
+
+#btnLoginSignUp:hover {
+  background-color: #F53478;
+}
+
+#createB:hover {
+  background-color: #F53478;
+}
+
+#Plus:hover {
+  background-color: #F53478;
+}
+
+.btn:active {
+  box-shadow: 0 5px rgba(102,102,102,0.48);
+  transform: translateY(1px);
+}
+
+#Open:hover {
+  background-color: #F53478;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #868e96;
+  --gray-dark: #343a40;
+  --primary: #4346e1;
+  --secondary: #f53478;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+footer {
+  max-width: 60%;
+  margin: auto;
+}
+
+#description {
+  background-color: black;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
+}
+
+#ProjectMainContainer {
+  background-color: #F8F8F8;
+}
+
+#ProjectMainFirstContainer {
+  background-color: #F8F8F8;
+}
+
+#preview {
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
+}
+
+#downloadV {
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
+}
+
+#addInfos {
+  background-color: black;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
+}
+
+#ProjectMainFirstContainer, {
+}
+
+#ContainerTop {
+  max-width: 70%;
+  margin: auto;
+}
+
+body {
+  font-family: Segoe Ui;
+}
+
+#ProjectNavBar {
+  padding-left: 0;
+  font-weight: 600;
+}
+
+#ProjectNavItems {
+  padding-left: 0;
+}
+
+.col-md-4 {
+}
+
+#HWhite {
+  color: white;
+  font-size: xx-large;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+#HBlack {
+  color: black;
+  font-size: xx-large;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+#WhiteTxtProjet {
+  color: white;
+  font-weight: 100;
+  opacity: 0.83;
+}
+
+#DownloadIcon {
+  height: 27px;
+  width: 27px;
+}
+
+#Versions {
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.versionCreatorP {
+  font-weight: 700;
+  margin-bottom: 0;
+  max-width: 50%;
+  margin-top: 10px;
+}
+
+#editButton {
+  background-color: white;
+}
+
+#dateVersion {
+  margin-bottom: 20px;
+}
+
+#PlusVersion {
+  background-color: #4346E1;
+  color: white;
+  height: 49px;
+  width: 49px;
+  margin-bottom: 15px;
+  box-shadow: 1px 5px 16px rgba(67,70,225,0.76);
+}
+
+#scrollableZone {
+  overflow: auto;
+  height: 20rem;
+  margin-bottom: 50px;
+}
+
+#ScrollableVersions {
+  overflow: auto;
+  height: 34rem;
+  margin-bottom: 10px;
+}
+
+#StemsItems {
+  box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#StemsWaveformColumn {
+  background-color: black;
+  padding: 10px;
+}
+
+#NameStemsP {
+  font-weight: 500;
+}
+
+#SizeStemsP {
+}
+
+#InfoStemsP {
+}
+
+#dlColStems {
+  min-width: 20%;
+}
+
+#btnDownloadStems {
+  color: white;
+  background-color: #4346E1;
+  border-color: #dae0e5;
+  height: 45px;
+  margin-bottom: 14px;
+  width: 46px;
+  border-radius: 16px;
+  box-shadow: 1px 1px 16px rgba(67,70,225,0.77);
+}
+
+#btnDownloadStems:hover {
+  background-color: #F53478;
+}
+
+#ProjectTitle {
+  font-weight: 700;
+}
+
+#LightTxt {
+  color: rgb(167,167,167);
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+audio {
+  margin-bottom: 3px;
+}
+
+#TopColumnVersion {
+  border-color: #707070;
+  border-bottom: 2px solid rgba(112,112,112,0.3) ;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #4346E1;
+}
+
+#addStemsButton {
+  font-size: 15px;
+  color: white;
+  background-color: #4346E1;
+  border-color: #dae0e5;
+  margin-left: 14px;
+  border-radius: 16px;
+  box-shadow: 1px 1px 16px rgba(67,70,225,0.77);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#SubmitDragandDropBTN {
+  font-size: 15px;
+  color: white;
+  background-color: #4346E1;
+  border-color: #dae0e5;
+  border-radius: 16px;
+  box-shadow: 1px 1px 16px rgba(67,70,225,0.77);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#colStemsTitle {
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 300px;
+  max-width: 100%;
+  height: 136px;
+}
+
+#SaveDesc {
+  font-size: 15px;
+  color: white;
+  background-color: #4346E1;
+  border-color: #dae0e5;
+  border-radius: 16px;
+  box-shadow: 1px 1px 16px rgba(67,70,225,0.77);
+  font-weight: 400;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+
+#CurrentVersion {
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(33,37,41,0.57);
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-left: 3px solid rgb(245,52,120) ;
+}
+
+#hNewV {
+  margin-top: 10px;
+}
+
+#SNewV {
+  text-align: start;
+  font-style: italic;
+  opacity: 0.67;
+}
+
+#CreateNewVBTN {
+  font-size: 14px;
+  color: white;
+  background-color: #F53478;
+  border-color: #dae0e5;
+  border-radius: 40px;
+  box-shadow: 1px 1px 16px rgba(245,52,120,0.52);
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
