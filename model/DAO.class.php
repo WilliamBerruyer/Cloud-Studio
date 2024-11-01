@@ -21,7 +21,7 @@ class DAO{
         {
             $this->email = $mail;
             $this->mdp = $mdp;
-            $this->connection = new \PDO($this->database, "William", "dhJbD)FuKq8sbEk");
+            $this->connection = new \PDO($this->database, "ouyppnrxzt", "iYHMOdJiAaICvF$1");
             $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             $this->connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
         }
