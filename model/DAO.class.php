@@ -9,7 +9,7 @@ require_once("VersionMix.class.php");
 
 class DAO{
 
-    private string $database = 'mysql:dbname=DB;host=localhost;port=80;charset=utf8';
+    private string $database;// = 'mysql:dbname=DB;host=localhost;port=80;charset=utf8';
     private string $chemin = '/var/www/html/data/';
     private PDO $connection;
     private string $email;
@@ -17,17 +17,22 @@ class DAO{
 
     function __construct($mail='default', $mdp='default')
     {
-        try
-        {
-            $this->email = $mail;
-            $this->mdp = $mdp;
-            $this->connection = new \PDO($this->database, "root", "root");
-            $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-            $this->connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
-        }
-        catch (PDOException $e)
-        {
-            die("PDO Error :".$e->getMessage()." $this->database\n");
+        $this->email = $mail;
+        $this->mdp = $mdp;
+
+        // Azure MySQL connection string
+        $server = 'cloudstudio.mysql.database.azure.com';
+        $database = 'cloudstudio'; // replace with your actual database name
+        $this->database = "mysql:host=$server;dbname=$database;charset=utf8";
+
+        try {
+            $this->connection = new \PDO($this->database, "William", "dhJbD)FuKq8sbEk", [
+                //PDO::MYSQL_ATTR_SSL_CA => '/path/to/ca-cert.pem', // Path to your CA certificate
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_EMULATE_PREPARES => false
+            ]);
+        } catch (PDOException $e) {
+            die("PDO Error: " . $e->getMessage());
         }
     }
 
