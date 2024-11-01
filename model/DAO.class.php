@@ -9,7 +9,7 @@ require_once("VersionMix.class.php");
 
 class DAO{
 
-    private string $database = 'mysql:dbname=cloudstudio;host=cloudstudio.mysql.database.azure.com;port=3306;charset=utf8';
+    private string $database = 'mysql:dbname=clstudio-database;host=cloudstudio.mysql.database.azure.com;port=3306;charset=utf8';
     private string $chemin = '/var/www/html/data/';
     private PDO $connection;
     private string $email;
