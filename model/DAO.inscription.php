@@ -4,7 +4,7 @@ require_once("Utilisateur.php");
 try
 {
     $dsn = 'mysql:dbname=clstudio-database;host=cloudstudio.mysql.database.azure.com;port=3306;charset=utf8';
-    $connection = new \PDO($dsn, 'ouyppnrxzt', 'iYHMOdJiAaICvF$1');
+    $connection = new \PDO($dsn, 'ouyppnrxzt', 'Pimaille05D');
     $connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     $connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
 
