@@ -14,6 +14,7 @@ class DAO{
     private PDO $connection;
     private string $email;
     private string $mdp;
+    $sslCertPath = getenv('SSL_CERT_PATH');
 
     function __construct($mail='default', $mdp='default')
     {
@@ -23,7 +24,7 @@ class DAO{
             $this->mdp = $mdp;
 
             $options = [
-                PDO::MYSQL_ATTR_SSL_CA => 'ssl\DigiCertGlobalRootCA.crt.pem',
+                PDO::MYSQL_ATTR_SSL_CA => $sslCertPath,
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false
             ];
