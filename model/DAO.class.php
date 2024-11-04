@@ -14,7 +14,6 @@ class DAO{
     private PDO $connection;
     private string $email;
     private string $mdp;
-    $sslCertPath = getenv('SSL_CERT_PATH');
 
     function __construct($mail='default', $mdp='default')
     {
