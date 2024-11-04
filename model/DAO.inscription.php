@@ -7,7 +7,8 @@ try
     $connection = new \PDO($dsn, 'ouyppnrxzt', 'Pimaille05');
     $connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     $connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
-    $connection->setAttribute(PDO::MYSQL_ATTR_SSL_CA => 'SSL/DigiCertGlobalRootCA.crt.pem');
+    $connection->setAttribute(PDO::MYSQL_ATTR_SSL_CA, 'SSL/DigiCertGlobalRootCA.crt.pem');
+
 
 }
 catch(Exception $e)
