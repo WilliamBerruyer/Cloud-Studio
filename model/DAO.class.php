@@ -27,7 +27,7 @@ class DAO{
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false
             ];
-            $this->connection = new PDO($database, 'ouyppnrxzt', 'Pimaille05', $options);
+            $this->connection = new PDO($database, 'ouyppnrxzt@%', 'Pimaille05', $options);
             // $this->connection = new \PDO($this->database, "ouyppnrxzt", "Pimaille05");
             // $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             // $this->connection->setAttribute(PDO::MYSQL_ATTR_SSL_CA => 'ssl\DigiCertGlobalRootCA.crt.pem');
