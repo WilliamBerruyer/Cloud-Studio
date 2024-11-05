@@ -37,7 +37,7 @@
                  <ul class="nav navbar-nav ml-auto">
                      <li class="nav-item"></li>
                      <li class="nav-item"><a class="nav-link js-scroll-trigger" id="pagesSite" href="../controler/home.ctrl.php">Home</a></li>
-                     <li class="nav-item"><a class="nav-link" id="pagesSite" href="#">Account</a></li>
+                     <li class="nav-item"><a class="nav-link" id="pagesSite" href="../controler/settings.ctrl.php">Account</a></li>
                      <li class="nav-item"><a class="nav-link js-scroll-trigger" id="pagesSite" href="../controler/logout.ctrl.php">Log out</a></li>
                  </ul>
              </div>
