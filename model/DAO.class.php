@@ -74,13 +74,36 @@ class DAO{
         $result = $this->connection->query("INSERT INTO Discussion(idUtilisateur, message, idProjet) VALUES ('$idUser','$sms',$idProjet)");
     }
 
-    function addUtilisateur(Utilisateur $u){
-      if ($this->email == 'default' && $this->mdp == 'default') {
-        //$this->connection->exec("CREATE USER \'$u->email\'@\'%\' IDENTIFIED BY \'$u->mdp\'");
-        $this->email = $u->email; $this->mdp = $u->mdp;
-        $this->connection->exec("INSERT INTO Utilisateur(nom,prenom,email,mdp,photoProfil) VALUES(\"$u->nom\",\"$u->prenom\",\"$u->email\",\"$u->mdp\",\"$u->photoProfil\")");
-      }
+    // function addUtilisateur(Utilisateur $u){
+    //   if ($this->email == 'default' && $this->mdp == 'default') {
+    //     //$this->connection->exec("CREATE USER \'$u->email\'@\'%\' IDENTIFIED BY \'$u->mdp\'");
+    //     $this->email = $u->email; $this->mdp = $u->mdp;
+    //     $this->connection->exec("INSERT INTO Utilisateur(nom, prenom, email, mdp, photoProfil) VALUES(\"$u->nom\",\"$u->prenom\",\"$u->email\",\"$u->mdp\",\"$u->photoProfil\")");
+    //   }
+    // }
+
+    function addUtilisateur(Utilisateur $u)
+{
+    if ($this->email == 'default' && $this->mdp == 'default') {
+        $this->email = $u->email;
+        $this->mdp = $u->mdp;
+
+        // Prepare the SQL statement with placeholders
+        $stmt = $this->connection->prepare(
+            "INSERT INTO Utilisateur (nom, prenom, email, mdp, photoProfil) VALUES (:nom, :prenom, :email, :mdp, :photoProfil)"
+        );
+
+        // Bind parameters to the placeholders
+        $stmt->bindParam(':nom', $u->nom, PDO::PARAM_STR);
+        $stmt->bindParam(':prenom', $u->prenom, PDO::PARAM_STR);
+        $stmt->bindParam(':email', $u->email, PDO::PARAM_STR);
+        $stmt->bindParam(':mdp', $u->mdp, PDO::PARAM_STR);
+        $stmt->bindParam(':photoProfil', $u->photoProfil, PDO::PARAM_STR);
+
+        // Execute the statement
+        $stmt->execute();
     }
+}
 
     function addProjet(Projet $p){
         $this->connection->exec("INSERT INTO Projet(idCreateur,nom) VALUES(\"$p->idCreateur\",\"$p->nom\")");
