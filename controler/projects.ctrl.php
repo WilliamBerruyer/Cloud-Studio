@@ -4,7 +4,7 @@ include_once(__DIR__."/../framework/view.class.php");
 $view = new View();
 $profilePic = "../assets/img/Rectangle%2025.png";
 $name=$_SESSION["User"]->nom." ".$_SESSION["User"]->prenom;
-$mail= "eminemLeRappeurSurcote@gmail.com";
+$mail= $_SESSION["User"]->email;
 
 $view->assign("profilePic",$profilePic);
 $view->assign("name",$name);
