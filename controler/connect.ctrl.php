@@ -15,6 +15,7 @@ if ($dao->getUtilisateurCo()->nom == ""){
 }
 else{
   if (session_status() == PHP_SESSION_NONE) {
+    echo "session_start";
     session_start();
   }
   $_SESSION['User'] = $dao->getUtilisateurCo();
