@@ -15,27 +15,22 @@ class DAO{
     private string $email;
     private string $mdp;
 
-    function __construct($mail='default', $mdp='default')
+    function __construct($mail = 'default', $mdp = 'default')
     {
-        try
-        {
+        try {
             $this->email = $mail;
             $this->mdp = $mdp;
 
-            // $options = [
-            //     PDO::MYSQL_ATTR_SSL_CA => 'SSL/DigiCertGlobalRootCA.crt.pem',
-            //     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            //     PDO::ATTR_EMULATE_PREPARES => false
-            // ];
-            //$this->connection = new PDO($this->database, 'ouyppnrxzt', 'Pimaille05', $options);
-            $this->connection = new \PDO($this->database, 'ouyppnrxzt', 'Pimaille05');
-            $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-            $this->connection->setAttribute(PDO::MYSQL_ATTR_SSL_CA, '/home/site/wwwroot/SSL/DigiCertGlobalRootCA.crt.pem');
-            $this->connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
-        }
-        catch (PDOException $e)
-        {
-            die("PDO Error :".$e->getMessage()." $this->database\n");
+            $options = [
+                PDO::MYSQL_ATTR_SSL_CA => '/home/site/wwwroot/SSL/DigiCertGlobalRootG2.crt.pem',
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_EMULATE_PREPARES => false,
+            ];
+
+            // Use options array directly in PDO instantiation
+            $this->connection = new PDO($this->database, 'ouyppnrxzt', 'Pimaille05', $options);
+        } catch (PDOException $e) {
+            die("PDO Error: " . $e->getMessage() . " " . $this->database . "\n");
         }
     }
 
