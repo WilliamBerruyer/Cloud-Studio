@@ -18,7 +18,7 @@ class DAO{
             $this->connection = new \PDO($this->dsn, $this->email, $this->mdp);
             $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             $this->connection->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
-            $this->connection->setAttribute(PDO::MYSQL_ATTR_SSL_CA, 'SSL/DigiCertGlobalRootG2.crt.pem');
+            $this->connection->setAttribute(PDO::MYSQL_ATTR_SSL_G2, 'SSL/DigiCertGlobalRootG2.crt.pem');
         /*}
         catch (PDOException $e)
         {
