@@ -22,7 +22,7 @@ class DAO{
             $this->mdp = $mdp;
 
             $options = [
-                PDO::MYSQL_ATTR_SSL_CA => '/home/site/wwwroot/SSL/DigiCertGlobalRootG2.crt.pem',
+                PDO::MYSQL_ATTR_SSL_CA => 'SSL/DigiCertGlobalRootG2.crt.pem',
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false,
             ];
